@@ -1,6 +1,4 @@
 #!/bin/bash
-last_file=$(ls -t | head -n1)
-chmod +x "$last_file"
 git add .
 git commit -m 'a'
 git push
