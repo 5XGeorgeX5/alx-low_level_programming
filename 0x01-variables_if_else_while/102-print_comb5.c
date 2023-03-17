@@ -17,11 +17,11 @@ for (i = 48; i < 58; i++)
 {
 for (j = 48; j < 58; j++)
 {
-for (k = 48; k < 58; k++)
+for (k = i; k < 58; k++)
 {
 for (x = 48; x < 58; x++)
 {
-if (x <= j && k <= i)
+if (x <= j && k == i)
 continue;
 putchar (i);
 putchar (j);
