@@ -12,5 +12,6 @@ int main(void)
 	char ms[] = "_putchar\n";
 
 	for (i = 0; i < 10; i++)
-	       _putchar(ms[i]);	
+		_putchar(ms[i]);
+	return (0);
 }
