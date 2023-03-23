@@ -15,7 +15,6 @@ int i;
 if (!n)
 {
 _putchar('0');
-_putchar('\n');
 return;
 }
 
