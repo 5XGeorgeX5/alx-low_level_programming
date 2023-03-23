@@ -15,7 +15,6 @@ for (i = 0; i < n; i++)
 {
 for (int j = n - i; j < n; j++)
 _putchar(' ');
-
 _putchar('\\');
 _putchar('\n');
 }
