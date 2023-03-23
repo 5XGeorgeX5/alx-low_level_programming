@@ -36,5 +36,4 @@ for (; i >= 0; i--)
 {
 _putchar('0' + a[i]);
 }
-_putchar('\n');
 }
