@@ -5,21 +5,26 @@
  *
  */
 
-void more_numbers(void);
+void more_numbers(void)
 {
 int i;
+int j;
 int k;
+
+for (k = 0; k < 10; k++)
+{
 for (i = '0'; i < '2'; i++)
 {
-for (k = '0'; k <= '9'; k++)
+for (j = '0'; j <= '9'; j++)
 {
 if (i == '1')
 {
-if (k == '5')
+if (j == '5')
 break;
 _putchar(i);
 }
-_putchar(k);
+_putchar(j);
+}
 }
 _putchar('\n');
 }
