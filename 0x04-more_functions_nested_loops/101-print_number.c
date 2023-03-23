@@ -9,7 +9,7 @@
 void print_number(int n)
 {
 
-int a[10];
+int a[15];
 int i;
 
 if (!n)
