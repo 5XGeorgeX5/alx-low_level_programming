@@ -19,4 +19,6 @@ _putchar(' ');
 _putchar('\\');
 _putchar('\n');
 }
+if (n < 1)
+_putchar('\n');
 }
