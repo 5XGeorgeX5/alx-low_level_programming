@@ -13,10 +13,11 @@ int j;
 
 for (i = 0; i < n; i++)
 {
-for (int j = n - i; j < n; j++)
-_putchar(' ');
-_putchar('\\');
+for (j = 0; j < i; j++)
+_putchar(32);
+_putchar(92);
 _putchar('\n');
 }
+if (n <= 0)
 _putchar('\n');
 }
