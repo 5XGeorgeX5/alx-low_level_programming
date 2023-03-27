@@ -12,7 +12,6 @@ void puts2(char *str)
 {
 int count;
 int i;
-int tmp;
 
 count = 0;
 while (*str)
