@@ -18,7 +18,6 @@ s++;
 count++;
 }
 s -= count;
-count;
 for (i = 0; i < count / 2; i++)
 {
 tmp = *(s + i);
