@@ -21,6 +21,11 @@ printf("Error\n");
 return (1);
 }
 a = atoi(argv[1]);
+if (a < 0)
+{
+printf("%d\n", 0);
+return (0);
+}
 sum = a / 25;
 a %= 25;
 sum += a / 10;
