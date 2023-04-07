@@ -27,7 +27,8 @@ sum += a / 10;
 a %= 10;
 sum += a / 5;
 a %= 5;
-sum += a;
+sum += a / 2;
+sum += a & 1;
 printf("%d\n", sum);
 return (0);
 }
