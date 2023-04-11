@@ -21,6 +21,9 @@ while (str[size])
 size++;
 
 copy = malloc(size + 1);
+if (!copy)
+return (0);
+
 for (i = 0; i < size + 1; i++)
 copy[i] = str[i];
 
