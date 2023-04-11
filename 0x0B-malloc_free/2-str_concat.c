@@ -29,8 +29,10 @@ return (0);
 
 for (i = 0; i < len1; i++)
 s3[i] = s1[i];
-for (i = 0; i <= len2; i++)
+for (i = 0; i < len2; i++)
 s3[i + len1] = s2[i];
+
+s3[len1 + len2] = '\0';
 
 return (s3);
 }
