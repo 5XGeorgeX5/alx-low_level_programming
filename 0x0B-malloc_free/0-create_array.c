@@ -17,7 +17,7 @@ char *str = malloc(size);
 if (!size || !str)
 return (0);
 
-while (size--);
+while (size--)
 str[size] = c;
 return (str);
 }
