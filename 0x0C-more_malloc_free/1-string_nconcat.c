@@ -14,10 +14,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 int i;
-int len1 = strlen(s1);
+int len1;
 int len2;
 char *s3;
 
+if (!s1)
+s1 = "";
+if (!s2)
+s2 = "";
+len1 = strlen(s1);
 if (strlen(s2) < n)
 len2 = strlen(s2);
 else
