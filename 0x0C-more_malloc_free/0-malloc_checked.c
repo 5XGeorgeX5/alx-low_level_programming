@@ -1,8 +1,10 @@
+#include <stdlib.h>
+
 /**
  * malloc_checked - allocates memory using malloc
  *
  * @b: the size
- * 
+ *
  * Return: the pointer to the allocated memory
  */
 
