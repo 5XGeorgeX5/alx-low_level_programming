@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
  * init_dog - categorizing dogs
  * @d: a pointer to the variable
