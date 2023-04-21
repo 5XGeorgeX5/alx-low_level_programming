@@ -14,7 +14,10 @@ unsigned int i;
 va_list args;
 
 if (!n)
+{
+putchar('\n');
 return;
+}
 va_start(args, n);
 for (i = 1; i < n; i++)
 {
