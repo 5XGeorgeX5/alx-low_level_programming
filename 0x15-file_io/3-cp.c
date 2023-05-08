@@ -27,9 +27,13 @@ char *create_buffer(char *file)
 
 void close_file(int fd)
 {
-	if (close(fd) == -1)
+	int c;
+
+	c = close(fd);
+
+	if (c == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
