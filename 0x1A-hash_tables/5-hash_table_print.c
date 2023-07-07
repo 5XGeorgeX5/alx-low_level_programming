@@ -11,20 +11,19 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i;
 	int comma = 0;
 
+	if (!ht)
+		return;
 	putchar('{');
-	if (ht)
+	for (i = 0; i < ht->size; i++)
 	{
-		for (i = 0; i < ht->size; i++)
+		search = ht->array[i];
+		while (search)
 		{
-			search = ht->array[i];
-			while (search)
-			{
-				if (comma)
-					printf(", ");
-				printf("'%s': '%s'", search->key, search->value);
-				search = search->next;
-				comma = 1;
-			}
+			if (comma)
+				printf(", ");
+			printf("'%s': '%s'", search->key, search->value);
+			search = search->next;
+			comma = 1;
 		}
 	}
 	printf("}\n");
