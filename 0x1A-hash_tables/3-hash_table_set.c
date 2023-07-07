@@ -22,14 +22,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	for (i = index; ht->array[i]; i++)
+	i = index;
+	if (strcmp(ht->array[i]->key, key) == 0)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)
-		{
-			free(ht->array[i]->value);
-			ht->array[i]->value = value_copy;
-			return (1);
-		}
+		free(ht->array[i]->value);
+		ht->array[i]->value = value_copy;
+		return (1);
 	}
 
 	new = malloc(sizeof(hash_node_t));
